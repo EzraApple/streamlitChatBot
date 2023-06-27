@@ -24,7 +24,10 @@ streamlit run app.py
 ***
 ## Requirements
 
-Before you begin, make sure you run `pip install -r requirements.txt`
+Before you begin, make sure you run 
+```bash
+pip install -r requirements.txt
+```
 ***
 ## Text
 
