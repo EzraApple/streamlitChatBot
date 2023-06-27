@@ -47,6 +47,6 @@ To chat with ChatGPT using voice inputs through Azure Speech Services, follow th
 4. When you see "Speak Now" you may speak, and when you see "Speech received" the bot is preparing to respond. When you see "Speech received" become grayed out, you may speak again.
 5. Listen to the AI-generated response through your speakers or headphones.
 
-*NOTE: You need to have an Azure Speech Services subscription key and region to use the voice input feature. Also the conversation will be just like the chat bot, so you must wait until the bot finishes speaking before talking.
+*NOTE: You need to have an Azure Speech Services subscription key to use the voice input feature. Also the conversation will be just like the chat bot, so you must wait until the bot finishes speaking before talking.
 
 Enjoy your chatting experience with Streamlit ChatGPT with Azure Speech Services!
