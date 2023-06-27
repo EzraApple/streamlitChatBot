@@ -2,10 +2,6 @@
 
 This Streamlit app uses ChatGPT along with Azure Speech Services to provide an interactive and engaging chatting experience for users. Users can chat with the AI both using text input and voice input, making your experience more personalized and convenient.
 ***
-## Requirements
-
-Before you begin, make sure you run `pip install -r requirements.txt`
-***
 ## How to Use
 
 1. Clone the repository:
@@ -25,8 +21,10 @@ cd chatApp
 ```bash
 streamlit run app.py
 ```
+***
+## Requirements
 
-4. Open the provided link in your browser and start using the application. In most cases it will open automatically.
+Before you begin, make sure you run `pip install -r requirements.txt`
 ***
 ## Text
 
