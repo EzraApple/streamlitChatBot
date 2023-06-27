@@ -44,7 +44,7 @@ To chat with ChatGPT using voice inputs through Azure Speech Services, follow th
 1. Navigate to the sidebar and select "Voice" from the dropdown menu.
 2. Enter your [OpenAI API Key](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/#:~:text=Go%20to%20OpenAI%27s%20Platform%20website,generate%20a%20new%20API%20key.) and your [Azure Speech Subscription Key](https://carldesouza.com/get-a-microsoft-cognitive-services-subscription-key/).
 3. The bot should greet you right away.
-4. Speak into your microphone to chat with the bot.
+4. When you see "Speak Now" you may speak, and when you see "Speech received" the bot is preparing to respond. When you see "Speech received" become grayed out, you may speak again.
 5. Listen to the AI-generated response through your speakers or headphones.
 
 *NOTE: You need to have an Azure Speech Services subscription key and region to use the voice input feature. Also the conversation will be just like the chat bot, so you must wait until the bot finishes speaking before talking.

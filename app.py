@@ -42,14 +42,6 @@ def init_chat():
         st.session_state.last_chat = ''
 
 
-def speak_response(response):
-    speech_config = speechsdk.SpeechConfig(subscription='90e2389be77e483cbeb7b7f32c0e9be7', region='westus')
-    speech_config.speech_synthesis_voice_name = "en-US-SteffanNeural"
-    speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)
-    result = speech_synthesizer.speak_text_async(response).get()
-    return result
-
-
 def display_chat_history():
     for message in st.session_state.chat_history:
         if message["role"] == "user":
@@ -81,9 +73,10 @@ def chat_window():
             bot = VoiceBot(st.session_state.openai, st.session_state.azure)
             init_chat()
             if st.session_state.last_chat != '':
+                st.write("Speak now")
                 st.session_state.chat_history, st.session_state.last_chat = bot.get_speech(st.session_state.chat_history)
+                st.write("Speech received")
                 st.session_state.chat_history, _ = bot.speak_response(st.session_state.chat_history)
-                display_chat_history()
                 st.experimental_rerun()
             else:
                 st.session_state.chat_history, st.session_state.last_chat = bot.speak_response(st.session_state.chat_history)
